@@ -26,26 +26,48 @@ body {
     width: 400%;
 }
 
-.text_and_radio {
-    display: flex;
-    position: absolute;
-    justify-content: space-between;
-    width: 90%;
-    top:85%
-}
-
 .mem_button {
     display: inline-block;
     width: 0.8rem;
     height: 0.8rem;
-    border-radius:50%;
+    border-radius: 50%;
     background-color: rgb(38, 118, 240);
     cursor: pointer;
     margin-left: 0.5rem;
-    transition: all 1s ease;
+    transition: all 0.3s ease;
     border: 0.2rem solid rgb(38, 118, 240);
+    position: absolute;
+    z-index: 1;
+    top: 85%;
 }
 
+.image_text {
+    display: inline-block;
+    color: #fff;
+    margin-left: 0.5rem;
+    transition: all 0.3s ease;
+    position: absolute;
+    z-index: 1;
+    top: 85%;
+    transform: translateX(200vw);
+    font-size: 2rem;
+}
+
+label:nth-child(2){
+    left:80%;
+}
+
+label:nth-child(5){
+    left:85%;
+}
+
+label:nth-child(8){
+    left:90%;
+}
+
+label:nth-child(11){
+    left:95%;
+}
 
 .mem_button:hover {
     background-color: #fff;
@@ -57,36 +79,46 @@ input[name="mem_button"] {
     visibility: hidden;
 }
 
-#radio_button_1:checked ~ .i1 {
+#radio_button_1:checked ~ .image {
     transform: translateX(0%);
 }
 
-input[type="radio"]:checked+ .radio_buttons label {
-    background-color:chartreuse;
+input[type="radio"]:checked +label  {
+    background-color:rgba(0,0,0, 0);
+}
+#radio_button_1:checked ~.image_text:nth-child(3){
+    transform: translateX(0%);
 }
 
-#radio_button_2:checked ~ .image.i1 {
+#radio_button_2:checked ~.image_text:nth-child(6){
+    transform: translateX(0%);
+}
+
+#radio_button_3:checked ~.image_text:nth-child(9){
+    transform: translateX(0%);
+}
+#radio_button_4:checked ~.image_text:nth-child(12){
+    transform: translateX(0%);
+}
+
+#radio_button_2:checked ~ .image {
     transform: translateX(-100%);
 }
 
-#radio_button_3:checked ~ .i1 {
+#radio_button_3:checked ~ .image {
     transform: translateX(-200%);
 }
 
-#radio_button_4:checked ~ .i1 {
+#radio_button_4:checked ~ .image {
     transform: translateX(-300%);
 }
 
 .image {
     width: 25%;
-    transition: all 1s ease;
+    transition: all 0.3s ease;
 }
 .image img {
     width: 100%;
     height: 100%;
     border-radius: 5%;
-}
-
-.image_text {
-    color: #fff;
 }
