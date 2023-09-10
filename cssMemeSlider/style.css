@@ -1,0 +1,92 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-color: rgba(0,0,0, 0.9);
+}
+.wrapper {
+    width: 100vw;
+    height: 100vh;
+}
+
+.memeSlider{
+    position: absolute;
+    width: 95vw;
+    height: 95vh;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    overflow: hidden;
+}
+
+.memImage{
+    display: flex;
+    height: 75vh;
+    width: 400%;
+}
+
+.text_and_radio {
+    display: flex;
+    position: absolute;
+    justify-content: space-between;
+    width: 90%;
+    top:85%
+}
+
+.mem_button {
+    display: inline-block;
+    width: 0.8rem;
+    height: 0.8rem;
+    border-radius:50%;
+    background-color: rgb(38, 118, 240);
+    cursor: pointer;
+    margin-left: 0.5rem;
+    transition: all 1s ease;
+    border: 0.2rem solid rgb(38, 118, 240);
+}
+
+
+.mem_button:hover {
+    background-color: #fff;
+    border: 0.2rem solid #fff;
+}
+
+input[name="mem_button"] {
+    position: absolute;
+    visibility: hidden;
+}
+
+#radio_button_1:checked ~ .i1 {
+    transform: translateX(0%);
+}
+
+input[type="radio"]:checked+ .radio_buttons label {
+    background-color:chartreuse;
+}
+
+#radio_button_2:checked ~ .image.i1 {
+    transform: translateX(-100%);
+}
+
+#radio_button_3:checked ~ .i1 {
+    transform: translateX(-200%);
+}
+
+#radio_button_4:checked ~ .i1 {
+    transform: translateX(-300%);
+}
+
+.image {
+    width: 25%;
+    transition: all 1s ease;
+}
+.image img {
+    width: 100%;
+    height: 100%;
+    border-radius: 5%;
+}
+
+.image_text {
+    color: #fff;
+}

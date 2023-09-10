@@ -3,9 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>cssMemeSlider</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
+    <div class="wrapper">
+        <div class="memeSlider">
+            <div class="memImage">
+                <div class="image i1"><img src="./mems/0.jpg" alt="first mem"></div>
+                <div class="image"><img src="./mems/2.jpg" alt="second mem"></div>
+                <div class="image"><img src="./mems/3.jpg" alt="third mem"></div>
+                <div class="image"><img src="./mems/4.jpg" alt="fourth mem"></div>
+            </div>
+            <input type="radio" name="mem_button" id="radio_button_1" checked>
+            <input type="radio" name="mem_button" id="radio_button_2">
+            <input type="radio" name="mem_button" id="radio_button_3">
+            <input type="radio" name="mem_button" id="radio_button_4">
+            <div class="text_and_radio">
+                <div class="image_text">
+                    <span class="image_text 1">image 1</span>
+                    <span class="image_text 2">image 2</span>
+                    <span class="image_text 3">image 3</span>
+                    <span class="image_text 4">image 4</span>
+                </div>
+                <div class="radio_buttons">
+                    <label for="radio_button_1" class="mem_button"></label>
+                    <label for="radio_button_2" class="mem_button"></label>
+                    <label for="radio_button_3" class="mem_button"></label>
+                    <label for="radio_button_4" class="mem_button"></label>
+                </div>
+
+            </div>
+        </div>
+    </div>
 </body>
 </html>
