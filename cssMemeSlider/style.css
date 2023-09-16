@@ -26,10 +26,12 @@ body {
     width: 400%;
 }
 
+
+
 .mem_button {
     display: inline-block;
-    width: 0.8rem;
-    height: 0.8rem;
+    width: 1.5rem;
+    height: 1.5rem;
     border-radius: 50%;
     background-color: rgb(38, 118, 240);
     cursor: pointer;
@@ -54,19 +56,19 @@ body {
 }
 
 label:nth-child(2){
-    left:80%;
-}
-
-label:nth-child(5){
-    left:85%;
-}
-
-label:nth-child(8){
     left:90%;
 }
 
-label:nth-child(11){
+label:nth-child(5){
+    left:92.5%;
+}
+
+label:nth-child(8){
     left:95%;
+}
+
+label:nth-child(11){
+    left:97.5%;
 }
 
 .mem_button:hover {
