@@ -72,7 +72,15 @@
 
 @media (max-width:768px) {
     .image_text {
-    top: 92%;
+    top: 80%;
+}
+
+.mem_button{
+    top:70%;
+}
+
+.memImage{
+    height: 60vh;
 }
 
  label:nth-child(2) {
@@ -114,15 +122,31 @@ label:nth-child(11) {
     .mem_button {
         width: 1.2rem;
         height: 1.2rem;
+        top:50%
+    }
+    .memImage{
+        height: 40vh;
+    }
+    .image_text {
+        font-size: 1.5rem;
     }
 
     .image_text {
-        font-size: 1.5rem;
+        top: 60%;
     }
 }
 
 @media (max-width:383px) {
     .image_text {
         font-size: 1rem;
+        top:40%
     }
+    .mem_button {
+        top:35%;
+    }
+
+    .memImage{
+        height: 30vh;
+    }
+
 }
